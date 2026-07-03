@@ -30,16 +30,15 @@ jobs:
           libavformat-dev \
           libavcodec-dev \
           zlib1g-dev \
-          libgstreamer1.0 \
-          gstreamer1.0-plugins-base \
-          gstreamer1.0-plugins-good \
           libsqlite3-dev \
           sqlite3 \
           bzip2 \
           libbz2-dev \
           zip \
           unzip \
-          openjdk-17-jdk
+          openjdk-17-jdk \
+          libffi-dev \
+          libssl-dev
         pip3 install --user --upgrade buildozer cython virtualenv
 
     - name: Build with Buildozer
